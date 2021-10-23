@@ -1,0 +1,56 @@
+.main {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: $bg url('../img/mian-bg.jpg') center (center / cover) no-repeat;
+    &__wrapper {
+        margin-top: 200px;
+        .subtitle {
+            margin-top: 25px;
+        }
+    }
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 85px;
+    }
+    &__block {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        svg {
+            margin-right: 20px;
+        }
+    }
+    .btn {
+        margin-top: 70px;
+    }
+    &__button__arrow {
+        position: absolute;
+        width: 30px;
+        min-height: 15px;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        cursor: pointer;
+        transition: all .3s;
+        svg, svg path {
+            transition: all .3s;
+        }
+        &:hover svg path:nth-child(2) {
+            transform: translateY(5px);
+        }
+        &:hover svg {
+            height: 30px;
+            transform: translateY(5px);
+        }
+    }
+    &__link-price {
+        padding: 0;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

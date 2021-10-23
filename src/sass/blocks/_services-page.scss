@@ -1,0 +1,102 @@
+.services-page {
+    background-color: $bg;
+    padding-top: 160px;
+    padding-bottom: 60px;
+    color: #fff;
+    &__wrapper {
+        display: flex;
+    }
+    &__nav {
+        &__list {
+            list-style-type: none;
+        }
+        &__item {
+            background-color: transparent;
+            border: 1px solid $main-color;
+            border-radius: 3px;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: 0.2s;
+            &:hover {
+                box-shadow: 0 0 15px $main-color;
+            }
+            &-active {
+                background-color: $main-color;
+                &:hover {
+                    box-shadow: none;
+                }
+                .services-page__nav__link {
+                    color: #fff;
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        &__link {
+            color: $main-color;
+            font-size: 22px;
+            font-weight: 700;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                color: $main-color;
+                text-decoration: none;
+            }
+        }
+    }
+    &__content {
+        padding-left: 20px;
+        .divider {
+            margin: 0;
+            width: 60px;
+            margin-bottom: 40px;
+        }
+        table {
+            border-color: $main-color;
+            width: 100%;
+            thead td {
+                font-weight: 700;
+                font-size: 18px;
+            }
+            td {
+                padding: 7px;
+            }
+        }
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        &-wrapper {
+            margin-right: 20px;
+            height: 360px;
+            &:nth-child(2) {
+                margin-right: 0;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    &__text {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: justify;
+    }
+    &__title {
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    
+}

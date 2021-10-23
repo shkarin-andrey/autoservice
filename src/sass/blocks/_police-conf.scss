@@ -1,0 +1,18 @@
+.police-conf {
+    background-color: $bg;
+    padding-top: 160px;
+    padding-bottom: 60px;
+    color: #fff;
+    ul, ol {
+        list-style-type: none;
+        li {
+            line-height: 30px;
+        }
+        a {
+            color: $main-color;
+        }
+    }
+    h3 {
+        color: $main-color;
+    }
+}

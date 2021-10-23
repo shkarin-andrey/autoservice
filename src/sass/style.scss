@@ -1,0 +1,62 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/bootstrap-grid.min';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import 'base/variables';
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+}
+.divider {
+    width: 100px;
+    height: 3px;
+    display: block;
+    margin: 0 auto;
+    background-color: $main-color;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.divider-block {
+    width: 60px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@import 'blocks/header/header';
+@import 'blocks/header/menu';
+@import 'blocks/main/main';
+@import 'blocks/title';
+@import 'blocks/btn';
+@import 'blocks/main/about';
+@import 'blocks/main/services';
+@import 'blocks/main/application';
+@import 'blocks/main/contacts';
+@import 'blocks/footer/footer';
+@import 'blocks/record';
+@import 'blocks/price';
+@import 'blocks/contacts-section';
+@import 'blocks/police-conf';
+@import 'blocks/services-page';
+@import 'blocks/modal';
+
+
+
+
+
+@import 'blocks/animation';
+@import 'blocks/media';
+
+
+
+
+
+
+
+
+

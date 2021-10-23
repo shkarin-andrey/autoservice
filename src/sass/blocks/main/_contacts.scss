@@ -1,0 +1,33 @@
+.contacts {
+    padding-top: 120px;
+    background-color: $bg;
+    .row {
+        margin: 0;
+    }
+}
+.map {
+    position: relative;
+    padding: 0;
+    margin-top: 20px;
+    &__contacts {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 430px;
+        height: 100px;
+        background-color: $bg;
+        padding: 20px;
+        color: #fff;
+        text-align: center;
+        font-weight: 700;
+        a {
+            color: #fff;
+            line-height: 40px;
+            font-size: 20px;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.about {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    min-height: 620px;
+    background: $bg;
+    &__cards {
+        display: flex;
+        margin-top: 60px;
+    }
+    &__card {
+        text-align: center;
+        padding: 0 40px;
+        color: #fff;
+        img {
+            margin-bottom: 30px;
+            width: 120px;
+        }
+        &__descr {
+            font-size: 16px;
+            line-height: 23px;
+        }
+    }
+}

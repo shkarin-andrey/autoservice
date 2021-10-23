@@ -1,0 +1,443 @@
+@media (min-width: 320px) and (max-width: 991px) {
+    .header {
+        padding-top: 20px;
+        & .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        &__info {
+            text-align: center;
+        }
+        &__info-time {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+    .hamburger {
+        display: flex;
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100vh;
+        background: rgba(0,0,0,.9);
+        transform: translateY(-100%);
+        transition: all .3s;
+        &-active {
+            transform: translateY(0);
+        }
+        &__close {
+            display: block;
+        }
+        &__list {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            flex-direction: column;
+            width: 100%;
+        }
+        &__item {
+            width: 100%;
+        }
+        &__link {
+            font-size: 30px;
+            line-height: 70px;
+            font-weight: 700;
+            width: 100%;
+        }
+    }
+    .main {
+        &__wrapper {
+            padding-top: 40px;
+            text-shadow: 0 0 3px #000;
+        }
+        &-btn {
+            margin-left: 10px;
+            margin-bottom: 50px;
+        }
+        &__blocks {
+            margin-top: 10px;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__block {
+            margin: 10px 0;
+        }
+        & .btn {
+            margin-top: 20px;
+        }
+    }
+    
+    .title {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .subtitle {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .main__button__arrow {
+        display: none;
+    }
+    .about {
+        padding-top: 30px;
+        &__cards {
+            flex-direction: column;
+        }
+        &__card {
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+    }
+    .block__title {
+        font-size: 22px;
+    } 
+    .divider {
+        margin-top: 0;
+        &-block {
+            margin-top: 10px;
+        }
+    }
+    .block__descr {
+        font-size: 16px;
+    }
+    .fz_20 {
+        font-size: 18px;
+    }
+    .services {
+        padding-top: 0;
+        &__cards {
+            justify-content: center;
+        }
+        &-section {
+            padding-top: 250px;
+            .services__cards {
+                margin-top: 20px;
+            }
+        }
+    }
+    .application {
+        padding: 0 10px 60px;
+    }
+    .form {
+        min-width: 300px;
+        max-width: 420px;
+        margin: 0 auto;
+        max-height: unset;
+        margin-top: 20px;
+        &__title {
+            font-size: 19px;
+            line-height: 28px;
+        }
+        & label {
+            left: 20px;
+        }
+        &__block-check {
+            width: 100%;
+        }
+    }
+    .contacts {
+        padding-top: 40px;
+    }
+    .contacts .divider {
+        margin-bottom: 0;
+    }
+    .map__contacts {
+        position: relative;
+        transform: unset;
+        width: 100%;
+        padding: 10px 20px;
+        left: 0;
+    }
+    .footer .divider-block {
+        margin: 10px auto;
+    }
+    .footer hr {
+        margin-top: 0;
+    }
+    .footer__blocks {
+        flex-direction: column;
+    }
+    .footer__block {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .record a {
+        font-size: 30px;
+    }
+    .record__title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .price {
+        padding-top: 250px;
+        &__tab {
+            &, &-active,&-header, &-header-active {
+                transform: skew(0);
+            }
+            &-header {
+                font-size: 16px;
+            }
+            &-content-active {
+                padding: 20px 10px;
+            }
+            &-content__wrapper {
+                font-size: 14px;
+            }
+            &-content__price {
+                width: 100px;
+            }
+        }
+    }
+    .contacts {
+        &-section {
+            padding-top: 250px;
+        }
+        &__info {
+            order: 1;
+            margin-bottom: 60px;
+            min-height: 275px;
+            height: 100%;
+            svg {
+                min-width: 30px;
+                margin: 0;
+            }
+        }
+        &__form {
+            order: 2;
+            &__title {
+                text-align: center;
+            }
+            &-btn {
+                margin: 0 auto;
+            }
+            &__content {
+                padding-top: 40px;
+                &-wrapper {
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .block__title {
+        line-height: 30px;
+    }
+    .police-conf {
+        padding-top: 250px;
+    }
+    .services-page {
+        padding-top: 250px;
+        padding-bottom: 30px;
+        &__nav__link {
+            font-size: 18px;
+        }
+        &__content {
+            padding-left: 12px;
+        }
+        &__box {
+            flex-direction: column;
+            &-wrapper {
+                margin: 10px 0;
+            }
+        }
+    }
+    .modal {
+        &__section {
+            padding: 30px 10px;
+            max-width: 500px;
+            width: 100%;
+            min-height: 500px;
+        }
+        &__title {
+            font-size: 18px;
+        }
+        &__close {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .header .row {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .fz_20 {
+        font-size: 20px;
+    }
+    .main__wrapper {
+        margin-top: 120px;
+    }
+    .about__card__descr {
+        font-size: 16px;
+    }
+    .block__title {
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .form {
+        width: auto;
+        &__title {
+            font-size: 24px;
+        }
+    }
+    .services-section, .price, .contacts-section, .police-conf, .services-page {
+        padding-top: 150px;
+    }
+    .price__tab {
+        transform: skewX(-45deg);
+        width: 400px;
+        &-active {
+            transform: skewX(0);
+        }
+        &-header {
+            transform: skewX(45deg);
+            &-active {
+                transform: skewX(0);
+            }
+        }
+    }
+    .modal {
+        &__section {
+            width: 500px;
+            padding: 50px 30px;
+        }
+        &__title {
+            font-size: 22px;
+        }
+        &__close {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .subtitle {
+        font-size: 25px;
+    }
+    .about__cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .application .row {
+        justify-content: center;
+    }
+    .map__contacts {
+        position: absolute;
+        transform: translateX(-50%);
+        width: 430px;
+        padding: 10px 20px;
+        left: 50%;
+    }
+    .footer__blocks {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .record__title {
+        font-size: 26px;
+    }
+    .record a {
+        font-size: 36px;
+    }
+    .price__tab {
+        width: 600px;
+    }
+    .contacts__form {
+        order: 1;
+    }
+    .contacts__info {
+        order: 2;
+    }
+    .services-page__box {
+        flex-direction: row;
+        &-wrapper {
+            margin-right: 20px;
+        }
+    }
+    .modal__section {
+        width: 560px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header .row {
+        justify-content: space-between;
+    }
+    .hamburger {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+    .title {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .subtitle {
+        font-size: 32px;
+    }
+    .main__block {
+        font-size: 15px;
+    }
+    .fz_20 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .about__card {
+        padding: 0 10px;
+    }
+    .form__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .form label {
+        left: 20px;
+    }
+    .services-section {
+        padding-top: 160px;
+        .services__cards {
+            margin-top: 40px;
+        }
+    }
+    .price__tab {
+        width: 800px;
+    }
+    .services-page__nav__link {
+        font-size: 20px;
+    }
+    .modal__section {
+        width: 560px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .about__card {
+        padding: 0 10px;
+    }
+    .services-section {
+        .services__cards {
+            margin-top: 40px;
+        }
+    }
+    .services__card {
+        width: 360px;
+        margin-bottom: 20px;
+    }
+    .form label {
+        left: 50px;
+    }
+}

@@ -1,0 +1,40 @@
+.footer {
+    padding-top: 60px;
+    min-height: 320px;
+    background-color: $bg;
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    &__blocks {
+        display: flex;
+    }
+    &__block {
+        padding: 0 10px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+    &__list {
+        list-style-type: none;
+    }
+    &__link {
+        color: #fff;
+        transition: all 0.3s;
+        &:hover {
+            color: $main-color;
+            text-decoration: none;
+        }
+    }
+    &__bottom__block {
+        text-align: center;
+        padding: 20px;
+    }
+    hr {
+        margin-top: 30px;
+    }
+    .divider-block {
+        margin-left: 0;
+    }
+}

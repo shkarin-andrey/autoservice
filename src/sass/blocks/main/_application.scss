@@ -1,0 +1,101 @@
+.application {
+    background-color: $bg;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    .row {
+        align-items: center;
+    }
+    &__wheel {
+        height: 500px;
+    }
+}
+.form {
+    padding: 30px;
+    min-height: 470px;
+    max-height: 550px;
+    border: 1px solid $main-color;
+    border-radius: 10px;
+    text-align: center;
+    &__title {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 40px;
+    }
+    &__block {
+        position: relative;
+        color: #fff;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            color: $main-color;
+        }
+        &-check {
+            width: 360px;
+            margin: 0 auto;
+            input {
+                display: none;
+            }
+        }
+    }
+    &-btn {
+        margin: 20px auto 0;
+    }
+    .form__check__lab {
+        position: unset;
+        width: 100%;
+        margin-top: 10px;
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid $main-color;
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+    }
+    label {
+        position: absolute;
+        top: -10px;
+        left: 90px;
+        width: 85px;
+        background-color: $bg;
+        color: #fff;
+        font-size: 14px;
+    }
+    input {
+        width: 360px;
+        height: 50px;
+        border: 1px solid $main-color;
+        border-radius: 10px;
+        padding-left: 20px;
+        font-size: 14px;
+        background-color: transparent;
+        outline: none;
+        color: #fff;
+        margin-bottom: 20px;
+        &::placeholder{
+            color: #C4C4C4;
+        }
+    }
+    input[type=checkbox]:checked + .form__check__lab::before {
+        content: '';
+        background-image: url('../icons/main/form/draw-check-mark.svg');
+        background-size: 100%;
+    }
+    textarea {
+        width: 360px;
+        height: 120px;
+        border: 1px solid #FFB800;
+        border-radius: 10px;
+        padding-left: 20px;
+        padding-top: 10px;
+        font-size: 14px;
+        color: #fff;
+        outline: none;
+        background-color: transparent;
+        resize: none;
+    }
+}
